@@ -1,0 +1,48 @@
+import { Post } from "../types/Post";
+export const INITIAL_POSTS: Post[] = [
+    {
+        id: '1',
+        title: 'Khám phá React 19: Những tính năng mới',
+        author: 'Admin',
+        content: 'React 19 hứa hẹn mang đến nhiều cải tiến về hiệu năng và trải nghiệm phát triển. Một trong những điểm nhấn là React Compiler, được kỳ vọng sẽ tự động tối ưu hóa các component. Bên cạnh đó, các hook mới như useOptimistic cũng giúp xử lý các cập nhật UI một cách mượt mà hơn, mang lại cảm giác phản hồi ngay lập tức cho người dùng. Bài viết này sẽ đi sâu vào từng tính năng và cách áp dụng chúng vào dự án của bạn.',
+        thumbnailUrl: 'https://placehold.co/600x400/0ea5e9/white?text=React+19',
+        category: 'Công nghệ',
+        createdAt: new Date('2025-10-20T10:00:00Z').toISOString(),
+    },
+    {
+        id: '2',
+        title: '5 Địa điểm du lịch không thể bỏ lỡ ở Đà Nẵng',
+        author: 'Traveler',
+        content: 'Đà Nẵng, thành phố đáng sống nhất Việt Nam, luôn là điểm đến hấp dẫn. 1. Bà Nà Hills với Cầu Vàng nổi tiếng. 2. Bán đảo Sơn Trà, nơi có chùa Linh Ứng và tầm nhìn tuyệt đẹp. 3. Ngũ Hành Sơn với các hang động kỳ bí. 4. Bãi biển Mỹ Khê, một trong những bãi biển đẹp nhất hành tinh. 5. Phố cổ Hội An (gần Đà Nẵng) với vẻ đẹp cổ kính. Hãy xách ba lô lên và đi!',
+        thumbnailUrl: 'https://placehold.co/600x400/10b981/white?text=Đà+Nẵng',
+        category: 'Du lịch',
+        createdAt: new Date('2025-10-18T14:30:00Z').toISOString(),
+    },
+    {
+        id: '3',
+        title: 'Công thức Phở Bò gia truyền chuẩn vị Hà Nội',
+        author: 'Đầu Bếp',
+        content: 'Phở bò là tinh hoa ẩm thực Việt Nam. Để có một bát phở ngon, nước dùng là quan trọng nhất. Xương bò cần được ninh ít nhất 8 tiếng cùng với quế, hồi, thảo quả... Thịt bò phải là loại bắp bò tươi, thái mỏng. Bánh phở phải mềm nhưng không nát. Thêm chút hành lá, rau mùi và tương ớt, bạn sẽ có một bữa sáng không thể nào quên. Bí quyết nằm ở sự kiên nhẫn và tình yêu với món ăn.',
+        thumbnailUrl: 'https://placehold.co/600x400/f97316/white?text=Phở+Bò',
+        category: 'Ẩm thực',
+        createdAt: new Date('2025-10-15T08:00:00Z').toISOString(),
+    },
+    {
+        id: '4',
+        title: 'Kỹ năng quản lý thời gian hiệu quả',
+        author: 'Chuyên Gia',
+        content: 'Quản lý thời gian là chìa khóa để thành công. Bạn đã bao giờ cảm thấy 24 giờ là không đủ? Hãy thử áp dụng phương pháp Pomodoro: làm việc tập trung 25 phút, sau đó nghỉ 5 phút. Ngoài ra, hãy lập danh sách công việc (to-do list) mỗi ngày và ưu tiên các việc quan trọng nhất (theo ma trận Eisenhower). Đừng quên nói "không" với những việc không cần thiết. Bạn sẽ thấy hiệu suất tăng lên đáng kể.',
+        thumbnailUrl: 'https://placehold.co/600x400/ec4899/white?text=Time+Mgmt',
+        category: 'Đời sống',
+        createdAt: new Date('2025-10-12T11:20:00Z').toISOString(),
+    },
+    {
+        id: '5',
+        title: 'TypeScript: Tại sao nên sử dụng nó?',
+        author: 'Admin',
+        content: 'TypeScript là một superset của JavaScript, bổ sung thêm hệ thống kiểu tĩnh. Lợi ích lớn nhất là phát hiện lỗi sớm ngay trong quá trình code, thay vì lúc chạy (runtime). Nó cũng giúp code dễ đọc, dễ bảo trì hơn, đặc biệt với các dự án lớn và có nhiều người tham gia. Các IDE/Editor như VS Code hỗ trợ gợi ý code (IntelliSense) cực kỳ mạnh mẽ với TypeScript, giúp tăng năng suất làm việc.',
+        thumbnailUrl: 'https://placehold.co/600x400/3b82f6/white?text=TypeScript',
+        category: 'Công nghệ',
+        createdAt: new Date('2025-10-10T16:45:00Z').toISOString(),
+    },
+];

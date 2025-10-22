@@ -13,7 +13,7 @@ import { PostList } from './components/PostList';
 import { PostDetail } from './components/PostDetail';
 import { CreatePost } from './pages/CreatePost';
 import { EditPost } from './pages/EditPost';
-import { EmbeddedStyles } from './EmbeddedStyles';
+import './css/appcss.css';
 
 
 
@@ -36,7 +36,6 @@ const App: React.FC = () => {
 
     return (
         <HashRouter>
-            <EmbeddedStyles /> {}
             <div className="app-container">
                 <Navbar />
                 <main className="main-content">
@@ -57,7 +56,7 @@ const App: React.FC = () => {
                             path="/posts/edit/:id"
                             element={<EditPost posts={posts} setPosts={setPosts} />}
                         />
-                        {/* Route dự phòng cho trang chủ */}
+
                         <Route
                             path="/posts"
                             element={<PostList posts={posts} setPosts={setPosts} />}

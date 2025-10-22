@@ -7,5 +7,5 @@ export interface Post {
     content: string;
     thumbnailUrl: string;
     category: Category;
-    createdAt: string; // Sử dụng ISO string cho ngày tháng
+    createdAt: string;
 }

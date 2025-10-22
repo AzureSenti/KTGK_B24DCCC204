@@ -29,15 +29,14 @@ export const EditPost: React.FC<EditPostProps> = ({ posts, setPosts }) => {
             prev.map((p) => (p.id === id ? updatedPost : p))
         );
 
-        // Hiển thị thông báo và chuyển hướng
         setShowSuccess(true);
         setTimeout(() => {
             navigate(`/posts/${id}`);
-        }, 2000); // Chờ 2 giây rồi về trang chi tiết
+        }, 2000);
     };
 
     const handleCancel = () => {
-        navigate(`/posts/${id}`); // Quay lại trang chi tiết
+        navigate(`/posts/${id}`);
     };
 
     if (!postToEdit) {

@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
                     <NavLink
                         to="/"
                         className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
-                        end // 'end' để đảm bảo link này chỉ active khi ở đúng trang chủ
+                        end //
                     >
                         Trang chủ
                     </NavLink>

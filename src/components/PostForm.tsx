@@ -8,7 +8,7 @@ type FormErrors = {
 interface PostFormProps {
     onSubmit: (post: Omit<Post, 'id' | 'createdAt'>) => void;
     onCancel: () => void;
-    initialData?: Post; // Dữ liệu ban đầu (dùng cho edit)
+    initialData?: Post;
     submitText: string;
 }
 

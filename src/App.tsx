@@ -36,7 +36,7 @@ const App: React.FC = () => {
 
     return (
         <HashRouter>
-            <EmbeddedStyles /> {/* Nhúng CSS vào ứng dụng */}
+            <EmbeddedStyles /> {}
             <div className="app-container">
                 <Navbar />
                 <main className="main-content">

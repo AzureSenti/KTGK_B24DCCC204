@@ -14,17 +14,16 @@ export const CreatePost: React.FC<CreatePostProps> = ({ setPosts }) => {
     const handleSubmit = (formData: Omit<Post, 'id' | 'createdAt'>) => {
         const newPost: Post = {
             ...formData,
-            id: crypto.randomUUID(), // Tạo ID ngẫu nhiên
-            createdAt: new Date().toISOString(), // Đặt ngày đăng là hiện tại
+            id: crypto.randomUUID(),
+            createdAt: new Date().toISOString(),
         };
 
-        setPosts((prev) => [newPost, ...prev]); // Thêm bài mới lên đầu danh sách
+        setPosts((prev) => [newPost, ...prev]);
 
-        // Hiển thị thông báo thành công và chuyển hướng
         setShowSuccess(true);
         setTimeout(() => {
             navigate('/');
-        }, 2000); // Chờ 2 giây rồi về trang chủ
+        }, 2000);
     };
 
     const handleCancel = () => {
@@ -37,7 +36,7 @@ export const CreatePost: React.FC<CreatePostProps> = ({ setPosts }) => {
             {showSuccess && (
                 <div className="notification success">Đăng bài thành công!</div>
             )}
-            {!showSuccess && ( // Ẩn form sau khi đăng thành công
+            {!showSuccess && (
                 <PostForm
                     onSubmit={handleSubmit}
                     onCancel={handleCancel}

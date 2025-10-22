@@ -11,7 +11,7 @@ interface PostDetailProps {
 export const PostDetail: React.FC<PostDetailProps> = ({ posts, setPosts }) => {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
-    const [isDeleting, setIsDeleting] = useState(false); // State cho confirm xóa
+    const [isDeleting, setIsDeleting] = useState(false);
     const [showDeletedMessage, setShowDeletedMessage] = useState(false);
 
     const post = posts.find((p) => p.id === id);
@@ -31,7 +31,6 @@ export const PostDetail: React.FC<PostDetailProps> = ({ posts, setPosts }) => {
     const handleDelete = () => {
         setPosts((prev) => prev.filter((p) => p.id !== id));
         setShowDeletedMessage(true);
-        // Tự động chuyển về trang chủ sau 2 giây
         setTimeout(() => {
             navigate('/');
         }, 2000);
@@ -69,8 +68,7 @@ export const PostDetail: React.FC<PostDetailProps> = ({ posts, setPosts }) => {
             />
             <div
                 className="post-detail-content"
-                // Sử dụng dangerouslySetInnerHTML nếu nội dung là HTML
-                // Ở đây ta dùng pre-wrap để giữ định dạng xuống dòng
+
                 style={{ whiteSpace: 'pre-wrap' }}
             >
                 {post.content}
